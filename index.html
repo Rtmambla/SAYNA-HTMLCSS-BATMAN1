@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman T4SU | Home</title>
-    <style>
-        img {
-            background-color: #000;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
 
@@ -24,7 +20,7 @@
     </header>
 
     <main>
-        <!-- La première partie sur la section héro -->
+        <!-- La partie sur la section héro -->
         <section>
             <div>
                 <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les 
@@ -40,7 +36,7 @@
             <img src="./Assets/Logos/flèche_down_header.png" alt="flèche">
         </section>
 
-        <!-- La deuxième section concernant Batman -->
+        <!-- La section concernant Batman -->
          <section>
             <div>
                 <h1>BATMAN AU CINÉMA</h1>
@@ -74,7 +70,7 @@
             </div>
          </section>
 
-        <!-- La troisième section concerne les vilains dans batman-->
+        <!-- La section concerne les vilains dans batman-->
          <section>
             <div>
                 <h1>NÉMÉSIS</h1>
@@ -107,7 +103,7 @@
             </div>
          </section>
 
-         <!-- La quatrième section parle des alliés de Batman -->
+         <!-- La section parle des alliés de Batman -->
          <section>
             <div>
                 <h1>ALLIES</h1>
@@ -140,7 +136,7 @@
                 </div>
             </div>
 
-            <!-- La cinquième concerne JUSTICE LEAGUE -->
+            <!-- La section JUSTICE LEAGUE -->
          <section>
 
             <div>
@@ -157,7 +153,7 @@
 
          </section>
 
-         <!-- La sixième section concerne le MULTIMEDIA -->
+         <!-- La section concerne le MULTIMEDIA -->
          <section>
 
             <div>
@@ -168,74 +164,93 @@
                 <div>
                     <img src="./Assets/Illustrations/Bathome_ba1.png" alt="">
                 </div> 
-                <p>ACTION, Adventure</p>
-                <p>Batman Begins</p>
-                <p>IMDB : 8.2</p>
-                <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. 
-                Profondément traumatisé, il grandit obnubilé par un désir de vengeance. 
-                La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. 
-                De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, 
-                Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.</p>
+                <div>
+                    <h2>ACTION, Adventure</h2>
+                    <h3>Batman Begins</h3>
+                    <p>IMDB : <span>8.2</span></p>
+                    <p>Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. 
+                    Profondément traumatisé, il grandit obnubilé par un désir de vengeance. 
+                    La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. 
+                    De retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, 
+                    Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.</p>
+                </div>
                 <div>
                     <img src="./Assets/Logos/icon_flèche_2.png" alt="">
                 </div>     
                 <div>
                     <img src="./Assets/Illustrations/Bathome_ba2.png" alt="">
+                </div>
             </div>
 
          </section>
 
-        <!-- La septième section concerne un formulaire de contact -->
+        <!-- La section formulaire de contact -->
          <section>
 
             <div>
-                <h1>PRENONS CONTACT</h1>
-                <form action="/my-handling-form-page" method="post">
-                    <p>
-                        <label for="mail">ADRESSE MAIL</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </p>
-                    <p>NEWSLETTER</p>
+                <h2>PRENONS CONTACT</h2>
+                <form action=""> 
+                    <label for="email" >ADRESSE MAIL</label><br>
+                    <input type="email" name="email" placeholder="email"><br>
+                    <label for="newsletter" >NEWSLETTER</label><br>
+                    <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de BATMAN :</label>
+                    <input type="checkbox" ><br>
                     <div>
-                        <a href="#">Des films</a>
-                        <a href="#">Des comics</a>
-                        <a href="#">De tout</a>
+                        <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                        <span>    
+                            <img src="./Assets/Logos/icon_flèche_2.png" alt="">
+                        </span>
                     </div>
-                    <p>
-                        <label for="msg">MESSAGE</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </p>
+                    <div>
+                        <p>Souhaitez-vous recevoir des news</p>
+                    </div>
+                    <a href="#">Des films</a>
+                    <a href="#">Des comics</a>
+                    <a href="#">De tout</a>
+                    <p>MESSAGE</p>
+                    <textarea id="" name="message" placeholder="Laissez un commentaire pour la communauté"></textarea><br>   
+                    <input type="submit" value="CONFIRMER">
                 </form>
-                <p class="button">
-                    <button type="submit">CONFIRMER</button>
-                </p>
             </div>
          </section>
 
-        <!-- La huitième section concerne la réplique -->
+        <!-- La section Citation -->
         <section>
-            <div>   
-                <img src="./Assets/Logos/icon_guillemets_2.png" alt="">
-            </div>  
-            <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
-            <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
             <div>
-                <img src="./Assets/Logos/icon_guillemets_1.png" alt="">
+                <div>   
+                    <img src="./Assets/Logos/icon_guillemets_1.png" alt="">
+                </div>  
+                <div>
+                    <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                </div>
+                <div>
+                    <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+                </div>
+                <div>
+                    <img src="./Assets/Logos/icon_guillemets_2.png" alt="">
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-        <div>
-            <img src="./Assets/Logos/logo_sayna_white.png" alt="">
-            <img src="./Assets/Logos/icon_x.png" alt="">
-            <img src="./Assets/Logos/icon_DC.png" alt="">
-            <img src="./Assets/Logos/icon_facebook.png" alt="">
-            <img src="./Assets/Logos/icon_ig.png" alt="">
-            <img src="./Assets/Logos/icon_tw.png" alt="">
-        </div>
+            <div>
+                <div>
+                    <img src="./Assets/Logos/icon_WB.png" alt="">
+                    <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="./Assets/Logos/logo_sayna_white.png" alt="">
+                        <img src="./Assets/Logos/icon_x.png" alt="">
+                        <img src="./Assets/Logos/icon_DC.png" alt="">
+                    </a>
+                    <a href=""><img src="./Assets/Logos/icon_facebook.png" alt=""></a>
+                    <a href=""><img src="./Assets/Logos/icon_ig.png" alt=""></a>
+                    <a href=""><img src="./Assets/Logos/icon_tw.png" alt=""></a>  
+                </div>
+            </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,19 @@
+body {
+  background-color: #000000;
+}
+header  {
+  background-image: url("../Illustrations/Bathome1.png");
+}
+h1,h2,h3 {
+  color: #ffffff;
+}
+p {
+  color: #ffffff;
+}
+img{
+    background-color: #000000;
+}
+form {
+  color: #ffffff;
+}
+/* selecteur, Positionnement, (Float, flexbox) */
