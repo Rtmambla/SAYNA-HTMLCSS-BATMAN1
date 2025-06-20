@@ -1,19 +1,427 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* DESIGN GENERALE */
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+
+:root {
+  --yellow-color: #FFFF00;
+  --yellow-light: #f8f184;
+  --blue-color: #19587D;
+  --white-color: #ffffff;
+  --gradient-white: #eddebf5e;
+  --gradient-red: #89000976;
+  --black-color: #000000;
+  --grey-color: #494848;
+  --blue-color-dark:#152c38;
+  --grey-color-dark: #3834346c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+h1{ 
+  color: #ffffff;
+  font-family: 'Rajdhani';
+  font-size: 36px;
+  font-weight: 400;
+} 
+
+.container {
+ width: 80%;
+ margin: 0 auto;
+}
+
+body{
   background-color: #000000;
+  color : #ffffff;
+  font-family: 'Space+Grotesk';
+  font-weight: 500;
 }
-header  {
-  background-image: url("../Illustrations/Bathome1.png");
+
+/* DESIGN DE LA NAVIGATION */
+ 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
 }
-h1,h2,h3 {
-  color: #ffffff;
+
+ul {
+  display: flex;
+  list-style: none;
 }
-p {
-  color: #ffffff;
+
+nav ul a {
+  /* text-decoration: none; */
+  color: var(--white-color);
+  font-family: 'Rajdhani';
+  font-size: 30px;
+  font-weight: 500;
 }
-img{
-    background-color: #000000;
+
+/* 'Home' devient jaune lorsqu'on le survole  */
+nav ul a:hover {
+  color: var(--yellow-color);
 }
-form {
-  color: #ffffff;
+
+/* DESIGN DE LA PARTIE HERO */
+
+#hero {
+  background-image: url(../Illustrations/Bathome1.png);
+  height: 800px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-size: cover; 
 }
-/* selecteur, Positionnement, (Float, flexbox) */
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+#hero .titre {
+  margin: 20px 0;
+}
+
+#hero .cta{
+  margin: 20px 0;
+}
+
+.btn {
+  background : linear-gradient(80deg,var(--gradient-white),var(--gradient-red));  /* Dégradé de couleurs */
+  text-decoration: none;  
+  color: var(--white-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: var(--black-color) 15px 15px 50px;
+  display: inline-block;
+}
+
+
+#hero .fleche {
+  display: block;
+  margin: 0 auto;
+  margin-top: 280px;
+}
+
+.scroll{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  position: fixed;
+  right: 80px;
+  top: 230px;
+}
+
+.scroll img {
+  margin-top: 15px;  
+}
+
+/* DESIGN SECTION Batman au cinéma*/
+
+#batman-cinema {
+  margin-top: 40px;
+  font-family: 'Rajdhani';
+}
+
+.batman-personnages {
+  display: flex;
+  justify-content: space-between;
+}
+
+#batman-cinema .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin : 30px 0;
+}
+
+#batman-cinema .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 90%;
+  font-size: 23px;
+}
+
+#batman-cinema .personnage-info {
+  text-align: center;  
+}
+
+/* DESIGN SECTION Nemesis */
+
+#nemesis {
+  margin-top: 40px;
+  font-family: 'Rajdhani';
+}
+
+.nemesis-personnages {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nemesis .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin : 30px 0;
+}
+
+#nemesis .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 90%;
+  font-size: 23px;
+}
+
+#nemesis .personnage-info {
+  text-align: center;  
+}
+
+
+/* DESIGN SECTION Alliés */
+
+#allies {
+  margin-top: 40px;
+  font-family: 'Rajdhani';
+}
+
+.allies-personnages {
+  display: flex;
+  justify-content: space-between;
+}
+
+#allies .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin : 30px 0;
+}
+
+#allies .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 90%;
+  font-size: 23px;
+}
+
+#allies .personnage-info {
+  text-align: center;  
+}
+
+
+/* DESIGN JUSTICE LEAGUE */
+
+#justiceleague {
+  margin-top: 40px;
+}
+
+#justiceleague .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin : 30px 0;
+}
+
+#justiceleague .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 90%;
+  font-size: 23px;
+}
+
+/* DESIGN DE LA PARTIE MULTIMEDIA */
+
+#multimedia .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin : 30px 0;
+}
+
+#multimedia button{
+  position: relative;
+  top: 175px;
+  background: none;
+  border: none;
+} 
+
+#multimedia button.right{
+  right: -85%;
+}
+
+#multimedia .slider-multimedia{
+  display: flex;
+  width: 60%;
+  margin: 40px auto;
+}
+
+#multimedia .slider-image{
+  width: 100%;
+}
+
+#multimedia .slider-content{
+padding: 15px;
+background: linear-gradient(50deg,var(--grey-color),var(--blue-color-dark));
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+#multimedia .slider-content h2 { 
+  font-size: 14px;
+} 
+
+#multimedia .yellow{
+  color: var(--yellow-color);
+}
+
+#multimedia .image-bande-annonce {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* DESIGNE CONTACT */
+
+#contact {
+  background: linear-gradient(50deg,var(--grey-color),var(--blue-color-dark));
+  margin-top: 60px;
+  padding: 20px 0;
+}
+
+#contact .form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+#contact .titre {
+  display: block;  
+  margin : 27px 0;
+}
+
+#contact .form input[type="email"], textarea{
+  display: block;
+  width: 80%;
+  padding: 10px 0;
+  border-bottom: 2px solid rgb(116, 114, 114);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+
+#contact .news {
+  border-bottom: 2px solid rgb(116, 114, 114);
+  margin: 15px 0;
+  color: grey;
+}
+
+#contact .icon img {
+  transform: rotate(90deg);  
+  width: 10px;
+}
+
+::placeholder {
+  color: grey;
+}
+
+#contact .actualite, .frequence-news{
+  color: grey;
+}
+
+.btn-group {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form input[type="radio"] {
+  opacity: 0;
+}
+
+.btn-group label {
+  padding: 10px;
+  border: 2px solid;
+  cursor: pointer;
+  font-size: 15px;
+    -o-border-image: linear-gradient(
+      80deg,rgba(255, 255, 255, 0.411),rgba(54, 54, 203, 0.652)
+      )1;
+    border-image: linear-gradient(
+      80deg,rgba(255, 255, 255, 0.411),rgba(54, 54, 203, 0.652)
+      ) 1;
+
+}
+ 
+/* Designe du boutton CONFIRMER */
+input[type="submit"]{
+    color: var(--white-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    width: 230px;
+    position: relative;
+    top: -25px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradient-red));
+}
+
+#citation {
+  margin: 90px;
+}
+
+#citation .citation-carte {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#citation .citation-auteur {
+  padding-top: 30px;  
+  font-size: 10px;
+  font-family: "rajdhani";
+  }
+
+#citation .guillemet-fermé {
+  float: right;
+}
+
+/* DESIGN DU FOOTER */
+footer{
+  margin-top: 165px; 
+  position: relative;
+  top: -30px; 
+  font-family: "rajdhani";
+}
+
+footer .footer-text{
+  text-align: center;
+  font-size: 10px;
+}
+
+.social-footer {
+  text-align: center;  
+  margin: 50px 0;
+}
+
+footer .social-item {
+  padding: 15px;
+}
