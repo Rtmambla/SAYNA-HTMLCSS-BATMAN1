@@ -45,6 +45,33 @@ body{
   font-weight: 500;
 }
 
+.up-bar {
+  border-top:#494848 2px solid;
+  position: relative;
+  width: 87%;
+  top: 132px;
+  left: 102px;
+
+}
+
+.left-bar {
+  border-left:#494848 2px solid;
+  position: absolute;
+  top: 0;
+  left: 101px;
+  width: 2px;
+  height: 1000%; 
+}
+
+.right-bar {
+  border-right:#494848 2px solid;
+  position: absolute;
+  top: 0;
+  right: 95px;
+  width: 2px;
+  height: 1000%;
+ }
+
 /* DESIGN DE LA NAVIGATION */
  
 nav {
@@ -67,6 +94,11 @@ nav ul a {
   font-weight: 500;
 }
 
+.logo:hover {
+  filter: brightness(0) saturate(100%) invert(86%) sepia(70%)
+  saturate(3697%) hue-rotate(356deg) brightness(110%) contrast(104%);
+}
+
 /* 'Home' devient jaune lorsqu'on le survole  */
 nav ul a:hover {
   color: var(--yellow-color);
@@ -81,6 +113,7 @@ nav ul a:hover {
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover; 
+  font-family: 'rajdhani';
 }
 
 .content{
@@ -110,6 +143,8 @@ nav ul a:hover {
   font-size: 22px;
   box-shadow: var(--black-color) 15px 15px 50px;
   display: inline-block;
+  font-family: 'Rajdhani';
+
 }
 
 
@@ -124,7 +159,7 @@ nav ul a:hover {
   flex-direction: column; 
   align-items: center;
   position: fixed;
-  right: 80px;
+  right: 44px;
   top: 230px;
 }
 
@@ -270,15 +305,19 @@ nav ul a:hover {
 }
 
 #multimedia .slider-content{
-padding: 15px;
-background: linear-gradient(50deg,var(--grey-color),var(--blue-color-dark));
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px;
+  padding: 15px;
+  background: linear-gradient(50deg,var(--grey-color),var(--blue-color-dark));
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #multimedia .slider-content h2 { 
   font-size: 14px;
 } 
+
+#multimedia .slider-content p {
+  font-size: 14px;
+}
 
 #multimedia .yellow{
   color: var(--yellow-color);
@@ -294,8 +333,7 @@ border-bottom-right-radius: 20px;
 
 #contact {
   background: linear-gradient(50deg,var(--grey-color),var(--blue-color-dark));
-  margin-top: 60px;
-  padding: 20px 0;
+  padding: 70px 0;
 }
 
 #contact .form {
@@ -311,7 +349,7 @@ border-bottom-right-radius: 20px;
 
 #contact .titre {
   display: block;  
-  margin : 27px 0;
+  margin : 28px 0;
 }
 
 #contact .form input[type="email"], textarea{
