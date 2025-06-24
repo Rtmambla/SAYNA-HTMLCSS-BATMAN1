@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap&css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 /* DESIGN GENERALE */
 
@@ -113,7 +113,7 @@ nav ul a:hover {
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover; 
-  font-family: 'rajdhani';
+  font-family: 'space+grotesk';
 }
 
 .content{
@@ -365,6 +365,7 @@ nav ul a:hover {
 
 #contact .news {
   border-bottom: 2px solid rgb(116, 114, 114);
+  width: 80%;
   margin: 15px 0;
   color: grey;
 }
@@ -383,9 +384,11 @@ nav ul a:hover {
 }
 
 .btn-group {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
+  display: flex;         
+  justify-content: flex-start; 
+  gap: 10px;             
+  margin-left: 0;       
+  
 }
 
 .form input[type="radio"] {
@@ -393,6 +396,7 @@ nav ul a:hover {
 }
 
 .btn-group label {
+  margin: 10px;
   padding: 10px;
   border: 2px solid;
   cursor: pointer;
