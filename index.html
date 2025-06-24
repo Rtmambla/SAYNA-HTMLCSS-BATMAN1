@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
+    <div id="top"></div>
     <div class="up-bar"></div>
     <div class="left-bar"></div>
     <div class="right-bar"></div>
@@ -26,11 +27,11 @@
     <main>
         <!-- Les réseaux sociaux avec le scrolling -->
          <div class="scroll">
-            <img src="./Assets/Logos/logo_bat_flèche.png" alt="">
+            <a href="#top"><img src="./Assets/Logos/logo_bat_flèche.png" alt=""></a>
             <img src="./Assets/Logos/icon_facebook.png" alt="">
             <img src="./Assets/Logos/icon_ig.png" alt="">
             <img src="./Assets/Logos/icon_tw.png" alt="">
-            <img src="./Assets/Logos/logo_bat_flèche_2.png" alt="">
+            <a href="#bottom"><img src="./Assets/Logos/logo_bat_flèche_2.png" alt=""></a>
          </div>
         <!-- La partie sur la section héro -->
         <section id="hero">
@@ -42,8 +43,8 @@
                     <h2 class="titre">Il est Batman.</h2>
                     <div class="cta">
                         <a class="btn" href="#batman-cinema">VOIR LE HEROS</a>
-                        <a class="btn" href="#allies">LES ALLIES</a>
                         <a class="btn" href="#nemesis">LES ADVERSAIRES</a>
+                        <a class="btn" href="#allies">LES ALLIES</a>
                     </div>
                 </div>
             </div>
@@ -206,7 +207,7 @@
 
         <!-- La section formulaire de contact -->
          <section id="contact">
-
+            <div id="bottom"></div>
             <div class="form">
                 <h2>PRENONS CONTACT</h2>
                 <form action=""> 
@@ -233,9 +234,9 @@
                         <label for="tout">De tout</label>
                     </div>
                     
-                    <p>MESSAGE</p>
+                    <p class="titre">MESSAGE</p>
                     <textarea id="" name="message" placeholder="Laissez un commentaire pour la communauté"></textarea><br>   
-                    <input type="submit" value="CONFIRMER">
+                    <input class="btnconfirmer" type="submit" value="CONFIRMER">
                 </form>
             </div>
          </section>

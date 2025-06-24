@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap&css2?family=Space+Grotesk:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 /* DESIGN GENERALE */
 
 @font-face {
     font-family: 'Rajdhani';
     src: url(../police/Rajdhani-Medium.ttf);
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em; /* Réduction de la taille de police pour les petits écrans */
+
+    }
+  
 }
 
 :root {
@@ -25,6 +33,19 @@
   padding: 0;
   box-sizing: border-box;
   }
+
+h1, h2, h3, p, div, img{
+  opacity: 0; /* initialement invisible */
+  transform: translateX(-30px); /* déplacement vers la gauche */
+  animation: fadeInLeft 2s ease-out forwards;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 h1{ 
   color: #ffffff;
@@ -58,7 +79,7 @@ body{
   border-left:#494848 2px solid;
   position: absolute;
   top: 0;
-  left: 101px;
+  left: 102px;
   width: 2px;
   height: 1000%; 
 }
@@ -94,14 +115,21 @@ nav ul a {
   font-weight: 500;
 }
 
+.logo {
+  border-radius: 90%;
+}
+
 .logo:hover {
-  filter: brightness(0) saturate(100%) invert(86%) sepia(70%)
-  saturate(3697%) hue-rotate(356deg) brightness(110%) contrast(104%);
+  border: 2px solid var(--yellow-color);
+  transform: scale(1.15);   /* effet zoom léger lorsque la souris survol l'image */
+  transition: all 0.6s ease; /* animation fluide */
+  cursor: pointer;
 }
 
 /* 'Home' devient jaune lorsqu'on le survole  */
 nav ul a:hover {
   color: var(--yellow-color);
+  font-weight: bold;
 }
 
 /* DESIGN DE LA PARTIE HERO */
@@ -147,6 +175,10 @@ nav ul a:hover {
 
 }
 
+.btn:hover {
+  transform: scale(1.15);   /* effet zoom léger lorsque la souris survol le boutton*/
+  transition: all 0.6s ease; /* animation fluide */
+}
 
 #hero .fleche {
   display: block;
@@ -164,7 +196,16 @@ nav ul a:hover {
 }
 
 .scroll img {
+  border: 2px solid transparent;
   margin-top: 15px;  
+  border-radius: 50%;
+}
+
+.scroll img:hover {
+  border: 2px solid var(--yellow-color);
+  transform: scale(1.15);   /* effet zoom léger lorsque la souris survol l'image */
+  transition: all 0.6s ease; /* animation fluide */
+  cursor: pointer;
 }
 
 /* DESIGN SECTION Batman au cinéma*/
@@ -196,6 +237,10 @@ nav ul a:hover {
   text-align: center;  
 }
 
+.batman-item img:hover {
+  transform: scale(1.02);   /* effet zoom léger lorsque la souris survol l'image */
+}
+
 /* DESIGN SECTION Nemesis */
 
 #nemesis {
@@ -225,6 +270,9 @@ nav ul a:hover {
   text-align: center;  
 }
 
+.nemesis-item img:hover {
+  transform: scale(1.02);   /* effet zoom léger lorsque la souris survol l'image */
+}
 
 /* DESIGN SECTION Alliés */
 
@@ -255,6 +303,9 @@ nav ul a:hover {
   text-align: center;  
 }
 
+.allies-item img:hover {
+  transform: scale(1.02);   /* effet zoom léger lorsque la souris survol l'image */
+}
 
 /* DESIGN JUSTICE LEAGUE */
 
@@ -409,7 +460,17 @@ nav ul a:hover {
       ) 1;
 
 }
+
+.btn-group label:hover {
+  transform: scale(1.15);   /* effet zoom léger lorsque la souris survol le boutton*/
+  transition: all 0.6s ease; /* animation fluide */
+}
+
  
+.form p {
+  margin-top: 50px;
+}
+
 /* Designe du boutton CONFIRMER */
 input[type="submit"]{
     color: var(--white-color);
@@ -425,6 +486,14 @@ input[type="submit"]{
     cursor: pointer;
     background: linear-gradient(80deg,var(--gradient-white),var(--gradient-red));
 }
+
+.btnconfirmer:hover {
+  transform: scale(1.15);   /* effet zoom léger lorsque la souris survol le boutton*/
+  transition: all 0.6s ease; /* animation fluide */
+}
+
+
+/* DESIGN DE LA CITATION */
 
 #citation {
   margin: 90px;
@@ -462,6 +531,18 @@ footer .footer-text{
 .social-footer {
   text-align: center;  
   margin: 50px 0;
+  
+}
+
+.social-item img{
+  border-radius: 90%;
+}
+
+.social-item img:hover {
+
+  border: 2px solid var(--yellow-color);
+  transform: scale(1.15);   /* effet zoom léger lorsque la souris survol l'image */
+  transition: all 0.6s ease; /* animation fluide */
 }
 
 footer .social-item {
