@@ -8,19 +8,12 @@
 }
 
 
- /* === RESPONSIVE MOBILE === */
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-    overflow-x: hidden;
-  }
-
-/*    
+ /* === RESPONSIVE MOBILE === */    
 @media (max-width: 768px) {
     body {
-        font-size: 0.9em; /* Réduction de la taille de police pour les petits écrans 
+        font-size: 0.9em; /* Réduction de la taille de police pour les petits écrans */  
 
-    }*/
+    }
   
 }
 
