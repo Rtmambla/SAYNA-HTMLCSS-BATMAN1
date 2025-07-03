@@ -7,14 +7,13 @@
     src: url(../police/Rajdhani-Medium.ttf);
 }
 
-<<<<<<< HEAD
-=======
+
 
  /* === RESPONSIVE MOBILE === */    
 @media (max-width: 768px) {
     body {
         font-size: 0.9em; /* Réduction de la taille de police pour les petits écrans */  
->>>>>>> 7b8268068736af8bace74c7351903733315bd07e
+
 
 
 :root {
@@ -594,14 +593,7 @@ footer .footer-text{
 footer .social-item {
   padding: 15px;
 }
-<<<<<<< HEAD
 
-@media screen and (max-width: 700px) {
-  body {
-     background-color:grey;
 
-  } 
- 
-  }
-=======
->>>>>>> 7b8268068736af8bace74c7351903733315bd07e
+
+
