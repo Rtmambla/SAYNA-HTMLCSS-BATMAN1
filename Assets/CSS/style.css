@@ -7,13 +7,7 @@
     src: url(../police/Rajdhani-Medium.ttf);
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 0.9em; /* Réduction de la taille de police pour les petits écrans */
 
-    }
-  
-}
 
 :root {
   --yellow-color: #FFFF00;
@@ -64,7 +58,10 @@ body{
   color : #ffffff;
   font-family: 'Space+Grotesk';
   font-weight: 500;
+  font-size: 1.2rem;       /* taille relative à la racine */
+  line-height: 1.5;
 }
+
 
 .up-bar {
   border-top:#494848 2px solid;
@@ -421,10 +418,51 @@ nav ul a:hover {
   color: grey;
 }
 
-#contact .icon img {
-  transform: rotate(90deg);  
-  width: 10px;
+
+/* MENU DEROULANTE DE LA FREQUENCE DES NEWLETTERS */
+
+
+.dropdown img {
+
+  transition: transform 0.3s ease;
+  width: 16px;
+  cursor: pointer; /* <-- important pour signaler l'interaction */
+} 
+
+.dropdown img {
+  transform: rotate(90deg);
 }
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  background-color: #2f3a4b;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  overflow: hidden;
+  color: white;
+  width: 100%;
+  
+}
+
+.dropdown-menu li {
+  padding: 12px 16px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover { 
+  background-color: #3a4a5b;
+}
+
+.icon:hover + .dropdown-menu {
+  display: block; /* Affiche le menu déroulant au survol */
+}
+
+
+/* ---------------------------------------------------------------- */
 
 ::placeholder {
   color: grey;
@@ -548,3 +586,11 @@ footer .footer-text{
 footer .social-item {
   padding: 15px;
 }
+
+@media screen and (max-width: 700px) {
+  body {
+     background-color:grey;
+
+  } 
+ 
+  }
