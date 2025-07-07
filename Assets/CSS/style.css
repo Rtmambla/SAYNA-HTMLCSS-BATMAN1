@@ -37,7 +37,7 @@
   box-sizing: border-box;
   }
 
-h1, h2, h3, p, div, img{
+h1, h2, h3, p, div{
   opacity: 0; /* initialement invisible */
   transform: translateX(-30px); /* déplacement vers la gauche */
   animation: fadeInLeft 2s ease-out forwards;
