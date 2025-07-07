@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap&css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 /* DESIGN GENERALE */
 
 @font-face {
@@ -15,7 +16,7 @@
         font-size: 0.9em;
     }/* Réduction de la taille de police pour les petits écrans */  
 
-
+  }
 
 :root {
   --yellow-color: #FFFF00;
