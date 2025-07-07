@@ -122,7 +122,7 @@ nav ul a {
 }
 
 .logo {
-  border-radius: 90%;
+  border:none
 }
 
 .logo:hover {
@@ -199,13 +199,18 @@ nav ul a:hover {
   top: 230px;
 }
 
-.scroll img {
+.scroll a:hover {
+  -webkit-filter: invert(4%) sepia(100%) saturate(7494%) hue-rotate(358deg) brightness(109%) contrast(102%);
+          filter: invert(4%) sepia(100%) saturate(7494%) hue-rotate(358deg) brightness(109%) contrast(102%);
+}
+
+.scroll .social {
   border: 2px solid transparent;
   margin-top: 15px;  
   border-radius: 50%;
 }
 
-.scroll img:hover {
+.scroll .social:hover {
   border: 2px solid var(--yellow-color);
   transform: scale(1.15);   /* effet zoom léger lorsque la souris survol l'image */
   transition: all 0.6s ease; /* animation fluide */
