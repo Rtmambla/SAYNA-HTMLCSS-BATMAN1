@@ -609,17 +609,7 @@ footer .social-item {
   }
 }
 
-@media all and (max-width: 1200px) {
-  main .scroll{
-    position: fixed;
-    top: 50%;
-    /* right: 0; */
-    /* transform: translateY(-50%); */
-    display: flex;
-    /* flex-direction: column; */
-    /* z-index: 999; */
-  }
-}
+
 
 @media all and (max-width: 1200px) { 
     .batman-personnages, 
@@ -642,12 +632,6 @@ footer .social-item {
   
 }
 
-@media all and (max-width: 1205px) {
-  #multimedia button.right {
-    
-    width: 50px;
-  }
-}
 
 
 
