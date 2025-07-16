@@ -9,14 +9,12 @@
 }
 
 
-
- /* === RESPONSIVE MOBILE === */    
-@media (max-width: 768px) {
-    body {
-        font-size: 0.9em;
-    }/* Réduction de la taille de police pour les petits écrans */  
-
-  }
+.wrapper {
+  max-width: 1900px; /* largeur maximale sur écran large */
+  margin: 0 auto;     /* centre horizontalement */
+  padding: 0 1rem;     /* espace sur les côtés pour petits écrans */
+  width: 100%;
+}
 
 :root {
   --yellow-color: #FFFF00;
@@ -94,7 +92,7 @@ body{
   border-right:#494848 2px solid;
   position: absolute;
   top: 0;
-  right: 95px;
+  right: 97px;
   width: 2px;
   height: 1000%;
  }
@@ -598,6 +596,60 @@ footer .footer-text{
 footer .social-item {
   padding: 15px;
 }
+
+/* === RESPONSIVE MOBILE === */ 
+/* Permet d'adapter les images en fonction de la largeur de l'écran  */   
+
+@media all and (max-width: 1200px) {
+  
+  header,
+  main,
+  footer {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  main .scroll{
+    position: fixed;
+    top: 50%;
+    /* right: 0; */
+    /* transform: translateY(-50%); */
+    display: flex;
+    /* flex-direction: column; */
+    /* z-index: 999; */
+  }
+}
+
+@media all and (max-width: 1200px) { 
+    .batman-personnages, 
+    .nemesis-personnages, 
+    .allies-personnages  
+    { display: block; }
+  }
+
+@media all and (max-width: 1200px) {
+    .image-bande-annonce img{
+        width: 400px;
+    }
+  
+}
+
+@media all and (max-width: 400px) {
+    .image-bande-annonce img{
+        width: 100%;
+    }
+  
+}
+
+@media all and (max-width: 1205px) {
+  #multimedia button.right {
+    
+    width: 50px;
+  }
+}
+
+
 
 
 
